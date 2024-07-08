@@ -57,7 +57,7 @@ body {
 
 section {
   padding-top: 5rem;
-  height: 100vh;
+  height: 100%;
 }
 
 .divider {
@@ -83,4 +83,8 @@ section {
 
 .btn a:hover {
   gap: 6px;
+}
+
+.about-body p {
+  font-weight: 500;
 }

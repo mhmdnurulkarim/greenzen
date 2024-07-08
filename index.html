@@ -22,7 +22,7 @@
     <style type="text/tailwindcss">
       @layer utilities {
         .navbar .nav-link li a.active {
-          @apply bg-gray-100 md:bg-transparent md:text-blue-700;
+          @apply text-blue-700 bg-gray-100 md:bg-transparent md:text-blue-700;
         }
       }
     </style>
@@ -113,9 +113,11 @@
 
     <!-- Main -->
     <main class="mx-auto w-[90%]">
-      <section id="home" class="flex items-start md:items-center">
+
+      <!-- Home -->
+      <section id="home" class="">
         <div
-          class="flex items-center justify-evenly w-full gap-4 flex-col md:flex-row"
+          class="flex items-center mt-0 md:mt-10  justify-evenly w-full gap-4 flex-col md:flex-row "
         >
           <div class="img w-[65%] md:w-full max-w-[350px]">
             <img src="assets/img/image1.png" alt="Image1" />
@@ -148,7 +150,36 @@
           </div>
         </div>
       </section>
-      <section id="about">About section</section>
+      <!-- Home -->
+
+      <!-- About -->
+      <section id="about" >
+        <div
+          class="flex items-center justify-center gap-8 mt-5 p-10 px-15 flex-col-reverse md:flex-row bg-gray-100 rounded-sm"
+        >
+          <div class="about-body w-full md:w-[50%]">
+            <h1 class="text-2xl md:text-3xl font-semibold mb-2">Learn more about us</h1>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Voluptate molestias amet, autem sed deleniti cupiditate
+            </p>
+
+            <p>
+              <ul class="list-disc ms-6">
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</li>
+                <li>Lorem, ipsum dolor.</li>
+              </ul>
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit recusandae, in at ad atque qui molestias excepturi obcaecati sunt. Corporis aliquid quos officia magni numquam autem molestiae at, nostrum quod optio ut iure? Iusto, aliquam.
+            </p>
+          </div>
+          <div class="img">
+            <img src="assets/img/image2.png" alt="Image2" />
+          </div>
+        </div>
+      </section>
       <section id="product">Product section</section>
       <section id="news">News section</section>
       <section id="contact">Contact section</section>

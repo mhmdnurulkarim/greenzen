@@ -12,7 +12,7 @@ document.addEventListener("scroll", () => {
   }
 
   sections.forEach((section) => {
-    let sectionTop = section.offsetTop;
+    let sectionTop = section.offsetTop - 150;
 
     if (
       scrollTop >= sectionTop &&
