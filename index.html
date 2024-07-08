@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GreenZen</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/style/style.css" />
+
+    <!-- CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .navbar .nav-link li a.active {
+          @apply bg-gray-100 md:bg-transparent md:text-blue-700;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <nav class="navbar border-gray-200">
+      <div
+        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+      >
+        <a href="index.html" class="logo flex items-center gap-3">
+          <img src="assets/img/logo.png" class="h-8" alt="Flowbite Logo" />
+          <span class="self-center font-semibold whitespace-nowrap"
+            >GreenZen</span
+          >
+        </a>
+        <button
+          data-collapse-toggle="navbar-default"
+          type="button"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+          aria-controls="navbar-default"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Open main menu</span>
+          <svg
+            class="w-5 h-5"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 17 14"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15"
+            />
+          </svg>
+        </button>
+        <div
+          class="nav-link hidden w-full md:block md:w-auto"
+          id="navbar-default"
+        >
+          <ul
+            class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white"
+          >
+            <li>
+              <a
+                href="#home"
+                class="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 active"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="#about"
+                class="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href="#product"
+                class="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
+                >Product</a
+              >
+            </li>
+            <li>
+              <a
+                href="#news"
+                class="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
+                >News</a
+              >
+            </li>
+            <li>
+              <a
+                href="#contact"
+                class="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
+                >Contact us</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Header -->
+
+    <!-- Main -->
+    <main class="mx-auto w-[90%]">
+      <section id="home" class="flex items-start md:items-center">
+        <div
+          class="flex items-center justify-evenly w-full gap-4 flex-col md:flex-row"
+        >
+          <div class="img w-[65%] md:w-full max-w-[350px]">
+            <img src="assets/img/image1.png" alt="Image1" />
+          </div>
+          <div>
+            <h1 class="text-4xl md:text-6xl">GreenZen?</h1>
+            <div class="flex justify-between items-center mt-3 px-3 md:px-6">
+              <div>
+                <h4 class="text-2xl md:text-4xl">Soap</h4>
+                <h2 class="text-lg md:text-2xl">3 in 1</h2>
+              </div>
+              <div class="divider h-[40px] md:h-[50px]"></div>
+              <div>
+                <h2 class="flex items-center text-2xl md:text-4xl">
+                  <img
+                    src="assets/img/leaf.png"
+                    alt="leaf"
+                    class="w-[12px] md:w-[18px]"
+                  />
+                  ECO
+                </h2>
+                <h4 class="text-lg md:text-2xl">Friendly</h4>
+              </div>
+            </div>
+            <div class="btn mt-4 text-center">
+              <a href="#about"
+                >See more <i class="bx bx-right-arrow-alt text-lg"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="about">About section</section>
+      <section id="product">Product section</section>
+      <section id="news">News section</section>
+      <section id="contact">Contact section</section>
+    </main>
+    <!-- Main -->
+
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
