@@ -28,6 +28,11 @@ body {
   font-family: var(--default-font);
 }
 
+a,
+button {
+  transition: 0.1s;
+}
+
 .navbar {
   position: fixed;
   width: 100%;
