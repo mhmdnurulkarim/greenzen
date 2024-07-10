@@ -5,36 +5,25 @@ on:
       - master
 jobs:
   build:
-    name: Build
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout Repo
-        uses: actions/checkout@v2.3.2
-      - name: Install Dependencies
-        run: npm install      
-      - name: Build
-        env:
-          CI: false        
-        run: npm run build
-      - name: Archive Production Artifact
-        uses: actions/upload-artifact@v2
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
         with:
-          name: build
-          path: build
-  deploy:
-    name: Deploy
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout Repo
-        uses: actions/checkout@v2.3.2
-      - name: Download Artifact
-        uses: actions/download-artifact@v2
-        with:
-          name: build
-          path: build
+          node-version: '14'  # Pastikan sesuai dengan versi Node.js yang Anda gunakan
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build project
+        run: npm run build  # Sesuaikan dengan perintah build proyek Anda, jika ada
+
       - name: Deploy to Firebase
-        uses: w9jds/firebase-action@master
+        uses: w9jds/firebase-action@v10.0.0
         with:
           args: deploy --only hosting
         env:
