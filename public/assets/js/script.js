@@ -29,3 +29,13 @@ document.addEventListener("scroll", () => {
     }
   });
 });
+
+if (
+  window.location.pathname === "/public/index.html" ||
+  window.location.pathname === "/public/product.html" ||
+  window.location.pathname === "/public/about.html" ||
+  window.location.pathname === "/public/news.html" ||
+  window.location.pathname === "/public/contact.html"
+) {
+  window.location.href = "/public/error.html";
+}
