@@ -29,8 +29,3 @@ document.addEventListener("scroll", () => {
     }
   });
 });
-
-const allowedPages = ["/error.html"];
-if (!allowedPages.includes(window.location.pathname)) {
-  window.location.href = "/error.html";
-}
