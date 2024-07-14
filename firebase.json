@@ -9,12 +9,8 @@
     "rewrites": [
       {
         "source": "/",
-        "destination": "/error.html"
-      },      
-      {
-        "source": "/home",
         "destination": "/home.html"
-      },
+      },      
       {
         "source": "/about",
         "destination": "/about.html"
@@ -30,6 +26,10 @@
       {
         "source": "/product",
         "destination": "/product.html"
+      }, 
+      {
+        "source": "/error",
+        "destination": "/error.html"
       }
     ], 
     "redirects": [
@@ -39,23 +39,28 @@
         "type": "301"
       },
       {
+        "source": "/",
+        "destination": "/error",
+        "type": "301"
+      },
+      {
         "source": "/about",
-        "destination": "/",
+        "destination": "/error",
         "type": "301"
       },
       {
         "source": "/contact",
-        "destination": "/",
+        "destination": "/error",
         "type": "301"
       },
       {
         "source": "/news",
-        "destination": "/",
+        "destination": "/error",
         "type": "301"
       },
       {
         "source": "/product",
-        "destination": "/",
+        "destination": "/error",
         "type": "301"
       }
     ]
