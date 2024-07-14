@@ -10,6 +10,26 @@
       {
         "source": "/",
         "destination": "/error.html"
+      },
+      {
+        "source": "/about",
+        "destination": "/about.html"
+      },
+      {
+        "source": "/contact",
+        "destination": "/contact.html"
+      },
+      {
+        "source": "/error",
+        "destination": "/error.html"
+      },
+      {
+        "source": "/news",
+        "destination": "/news.html"
+      },
+      {
+        "source": "/product",
+        "destination": "/product.html"
       }
     ]
   }
