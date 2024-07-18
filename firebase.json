@@ -37,31 +37,6 @@
         "source": "/home",
         "destination": "/",
         "type": "301"
-      },
-      {
-        "source": "/",
-        "destination": "/error",
-        "type": "301"
-      },
-      {
-        "source": "/about",
-        "destination": "/error",
-        "type": "301"
-      },
-      {
-        "source": "/contact",
-        "destination": "/error",
-        "type": "301"
-      },
-      {
-        "source": "/news",
-        "destination": "/error",
-        "type": "301"
-      },
-      {
-        "source": "/product",
-        "destination": "/error",
-        "type": "301"
       }
     ]
   }
